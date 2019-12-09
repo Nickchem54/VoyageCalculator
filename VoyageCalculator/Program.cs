@@ -728,18 +728,14 @@ namespace VoyageCalculator
                 }
                 else
                 {
-
                     Console.WriteLine("Error try again");
                     DisplayContinuePrompt();
-
                 }
-
                 Console.BackgroundColor = ConsoleColor.Gray;
                 Console.ForegroundColor = ConsoleColor.Black;
                 break;
 
             } while (!validRepsonse);
-
         }
         static int DisplayGetBowHeight(int waterDepth)
         {
@@ -751,7 +747,6 @@ namespace VoyageCalculator
             {
                 DisplayScreenHeader("\t\t\t\tBow Height");
                 Console.WriteLine();
-
                 Console.WriteLine("\tWhat is the bow height?");
                 Console.WriteLine();
                 Console.Write("\tFeet:");
@@ -767,13 +762,11 @@ namespace VoyageCalculator
                     validResponse = true;
 
                     DisplayContinuePrompt();
-
                 }
                 else
                 {
                     Console.WriteLine("Error try again");
                     DisplayContinuePrompt();
-
                 }
 
             } while (!validResponse);
@@ -825,7 +818,6 @@ namespace VoyageCalculator
         #endregion
 
         #region Helper Methods
-
         static void DisplayWelcomeScreen()
         {
             Console.BackgroundColor = ConsoleColor.Gray;
@@ -845,10 +837,8 @@ namespace VoyageCalculator
             Console.WriteLine("\t\tThank you for using my Voyage Application!");
             Console.WriteLine();
 
-
             DisplayContinuePrompt();
         }
-
         static void DisplayContinuePrompt()
         {
             Console.CursorVisible = false;
@@ -857,7 +847,6 @@ namespace VoyageCalculator
             Console.ReadKey();
             Console.CursorVisible = true;
         }
-
         static void DisplayScreenHeader(string headerText)
         {
             Console.Clear();
@@ -865,7 +854,6 @@ namespace VoyageCalculator
             Console.WriteLine("\t\t" + headerText);
             Console.WriteLine();
         }
-
         #endregion
     }
 }
